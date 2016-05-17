@@ -1,0 +1,25 @@
+<style>
+    .BOLD{
+        font-weight: bold;
+    }
+
+    .ITALIC{
+        font-style: italic;
+    }
+
+    .Entity{
+        color: #3179B1;
+    }
+    .Entity[data-type='@mention']:before{
+        content: '@';
+        display: inline-block;
+    }
+    .Entity[data-type='#mention'] {
+        text-decoration: underline;
+    }
+    .Entity[data-type='#mention']:before{
+        content: '#';
+        display: inline-block;
+    }
+</style>
+
